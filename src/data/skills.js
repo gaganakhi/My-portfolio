@@ -1,5 +1,5 @@
 export const skills = [
     "HTML", "CSS", "JavaScript", "React",
-    "TypeScript", "Tailwind", "Git", "Vite"
+    "Selenium", "Java", "TestNG", "Agile", "Jenkins", "Postman", "Rest-Assured"
   ];
   

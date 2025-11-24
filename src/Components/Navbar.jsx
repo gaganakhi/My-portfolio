@@ -1,23 +1,19 @@
 export default function Navbar() {
-    return (
-      <header className="flex items-center justify-between py-6">
-        <a href="#" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold">
-            GN
-          </div>
-          <div>
-            <h1 className="text-lg font-semibold">Gagan N</h1>
-            <p className="text-xs text-slate-500">Qa Test Engineer</p>
-          </div>
-        </a>
-  
-        <nav className="space-x-6 text-sm text-slate-600">
-          <a href="#about" className="hover:text-indigo-600">About</a>
-          <a href="#projects" className="hover:text-indigo-600">Projects</a>
-          <a href="#skills" className="hover:text-indigo-600">Skills</a>
-          <a href="#contact" className="hover:text-indigo-600">Contact</a>
-        </nav>
-      </header>
-    );
-  }
-  
+  return (
+    <nav className="w-full fixed top-0 left-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
+      <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+        
+        <h1 className="text-xl font-bold text-primary tracking-wide">GAGAN N</h1>
+
+        <ul className="hidden md:flex gap-8 text-primary font-medium">
+          <li className="hover:text-accent cursor-pointer">Home</li>
+          <li className="hover:text-accent cursor-pointer">About</li>
+          <li className="hover:text-accent cursor-pointer">Projects</li>
+          <li className="hover:text-accent cursor-pointer">Skills</li>
+          <li className="hover:text-accent cursor-pointer">Contact</li>
+        </ul>
+
+      </div>
+    </nav>
+  );
+}

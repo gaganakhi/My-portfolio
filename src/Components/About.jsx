@@ -1,20 +1,24 @@
 export default function About() {
-    return (
-      <section id="about" className="mt-12 bg-white rounded-2xl p-8 shadow-sm">
-        <h3 className="text-2xl font-semibold">About me</h3>
-  
-        <p className="mt-4 text-slate-700 leading-relaxed">
-          I’m a frontend developer specializing in building interactive, accessible
-          and clean UI using React, JavaScript and Tailwind CSS.
-        </p>
-  
-        <ul className="mt-4 grid sm:grid-cols-2 gap-2 text-slate-600 list-disc list-inside">
-          <li>Responsive UI</li>
-          <li>Reusable components</li>
-          <li>Accessibility</li>
-          <li>Testing & performance</li>
-        </ul>
-      </section>
-    );
-  }
-  
+  return (
+    <section id="about" className="bg-white py-20 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-primary mb-6">About me</h2>
+
+        <div className="bg-lightbg p-8 rounded-xl shadow border">
+          <p className="text-secondary leading-relaxed">
+            I’m a QA Engineer specializing in Manual and Automation Testing. 
+            Skilled in Selenium, Java, writing test cases, identifying bugs, 
+            and ensuring high-quality product delivery.
+          </p>
+
+          <ul className="list-disc pl-6 mt-4 text-secondary space-y-1">
+            <li>Responsive UI</li>
+            <li>Automation (Selenium + Java)</li>
+            <li>Reusable components</li>
+            <li>Testing & performance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
