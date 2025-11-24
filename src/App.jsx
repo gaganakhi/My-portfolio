@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-800">
       <Navbar />
-      <main className="w-full px-6 py-12">
+      <main className="w-full px-4 py-12">
         <Hero />
         <About />
         <Projects />

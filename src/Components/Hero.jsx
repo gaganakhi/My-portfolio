@@ -2,9 +2,8 @@ import profile from "../assets/Gagan.png";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-lightbg text-primary py-24">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
-
+    <section className="w-full bg-lightbg text-primary py-24 px-6 flex flex-col md:flex-row items-center justify-center gap-12">
+      <div className="w-full px-6 flex flex-col md:flex-row items-center justify-center gap-12">
         {/* Left Text */}
         <div className="md:w-1/2 space-y-5">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -19,13 +18,13 @@ export default function Hero() {
           <div className="flex gap-4 pt-4">
             <a
               href="#projects"
-              className="bg-accent text-white px-5 py-3 rounded-lg font-medium shadow hover:opacity-90 transition"
+              className="border border-accent text-accent px-5 py-3 rounded-lg font-medium hover:bg-accent/10 transition"
             >
               See my work
             </a>
 
             <a
-              href="#contact"q
+              href="#contact"
               className="border border-accent text-accent px-5 py-3 rounded-lg font-medium hover:bg-accent/10 transition"
             >
               Contact me
