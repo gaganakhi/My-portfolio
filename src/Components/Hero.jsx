@@ -1,5 +1,4 @@
 import profile from "../assets/Gagan.png";
-
 export default function Hero() {
   return (
     <section className="w-full bg-lightbg text-primary py-24 px-6 flex flex-col md:flex-row items-center justify-center gap-12">
@@ -7,12 +6,11 @@ export default function Hero() {
         {/* Left Text */}
         <div className="md:w-1/2 space-y-5">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Hi, I’m <span className="text-accent">Gagan</span> — 
-            I build beautiful web experiences.
+          I'm a Software Test Engineer
           </h1>
 
           <p className="text-secondary text-lg">
-            QA Engineer • Manual + Automation Testing • Selenium • Java
+          Specialized In Manual + Automation Testing • Selenium • Java
           </p>
 
           <div className="flex gap-4 pt-4">
