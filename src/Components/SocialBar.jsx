@@ -1,23 +1,12 @@
 import { useState } from "react";
 
-/**
- * SocialBar.jsx
- * - Fixed vertical icon bar left side
- * - Click the 'profile' icon to open a sliding drawer with name, title and resume download
- *
- * Notes:
- * - Put resume at public/resume.pdf (accessible at /resume.pdf)
- * - Replace links (linkedinUrl, githubUrl, mailto) with your real links
- * - You can replace inline SVGs with react-icons if you prefer
- */
-
 export default function SocialBar() {
   const [open, setOpen] = useState(false);
 
-  const linkedinUrl = "https://www.linkedin.com/in/YOURPROFILE";
-  const githubUrl = "https://github.com/YOURUSERNAME";
-  const mailto = "mailto:you@example.com";
-  const resumeUrl = "/resume.pdf"; // put resume.pdf into public/
+  const linkedinUrl = "https://www.linkedin.com/in/gagan-n-514608271";
+  const githubUrl = "https://github.com/gaganakhi";
+  const mailto = "mailto:gaganakhil3@gmail.com";
+  const resumeUrl = "/Gagan_QA_Engineer.pdf";
 
   return (
     <>
