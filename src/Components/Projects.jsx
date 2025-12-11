@@ -3,13 +3,21 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects" className="mt-10">
-      <h3 className="text-2xl font-semibold">Selected projects</h3>
+    <section id="projects">
+      <div className="max-w-screen-lg pt-[100px] mx-auto flex flex-col px-4 lg:pt-32 sm:pt-20">
 
-      <div className="mt-6 grid md:grid-cols-3 gap-6">
-        {projects.map((item, i) => (
-          <ProjectCard key={i} project={item} />
-        ))}
+        {/* Title */}
+        <h2 className="text-4xl font-bold inline border-b-4 border-accent text-primary">
+          Protfolio
+        </h2>
+
+        {/* Grid */}
+        <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {projects.map((item, i) => (
+            <ProjectCard key={i} project={item} />
+          ))}
+        </div>
+
       </div>
     </section>
   );

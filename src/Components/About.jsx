@@ -1,4 +1,3 @@
-import React from "react";
 
 const About = () => {
   return (
@@ -16,7 +15,7 @@ const About = () => {
         </div>
 
         {/* White Box */}
-        <div className="bg-white shadow-md border w-full sm:h-fit max-h-700px rounded-lg overflow-y-auto sm:px-2">
+        <div className="bg-white shadow-md border w-full sm:h-fit max-h-500px rounded-lg overflow-y-auto sm:px-2">
           
           {/* Browser-style dots */}
           <div className="flex p-2 gap-2">

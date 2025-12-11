@@ -2,10 +2,11 @@ import { skills } from "../data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="mt-10 bg-white rounded-2xl p-6 shadow-sm">
-      <h3 className="text-2xl font-semibold text-center mb-6 text-primary">
-        Experience
-      </h3>
+    <section id="skills">
+      <div className="max-w-screen-lg pt-[100px] mx-auto flex flex-col px-4 lg:pt-32 sm:pt-20">
+      <h2 className="text-4xl font-bold inline border-b-4 border-accent text-primary">
+          Experience
+      </h2>
 
       <p className="text-center text-secondary mb-8">
         Some of the technologies I've worked with:
@@ -28,7 +29,7 @@ export default function Skills() {
             </div>
           </div>
         ))}
-
+        </div>
       </div>
     </section>
   );
