@@ -10,8 +10,8 @@ export default function Navbar() {
   const links = [
     { name: "Home", href: "#hero"},
     { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
+    { name: "Protfolio", href: "#projects" },
+    { name: "Experience", href: "#skills" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -39,7 +39,7 @@ export default function Navbar() {
           {links.map((link) => (
             <li 
               key={link.name} 
-              className="hover:text-blue-600 transition duration-200 cursor-pointer"
+              className="hover:text-blue-600 shadow-sm transition-all duration-200 cursor-pointer"
             >
               <a href={link.href}>{link.name}</a>
             </li>
