@@ -9,17 +9,23 @@ import SocialBar from "./Components/SocialBar";
 
 export default function App() {
   return (
-    <div className="min-h-screen w-full overflow-x-hidden bg-gradient-to-b from-slate-50 to-white text-slate-800">
+    <div className="min-h-screen w-full overflow-x-hidden bg-gradient-to-b from-slate-50 to-white text-slate-800 scroll-smooth">
+      
+      {/* Fixed / Sticky Navbar */}
       <Navbar />
-      <main className="w-full px-4 py-12">
+
+      {/* Main content – no global padding */}
+      <main className="w-full">
         <Hero />
         <About />
         <Projects />
         <Skills />
         <Contact />
         <Footer />
-        <SocialBar />
       </main>
+
+      {/* Floating social links */}
+      <SocialBar />
     </div>
   );
 }

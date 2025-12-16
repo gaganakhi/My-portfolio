@@ -1,12 +1,11 @@
-
 const Contact = () => {
   return (
-    <div
-      name="contact"
-      className="xl:h-fit h-fit sm:h-fit px-10 pb-10 sm:px-2 w-full bg-white"
+    <section
+      id="contact"
+      className="scroll-mt-24 xl:h-fit h-fit sm:h-fit px-10 pb-10 sm:px-2 w-full bg-white"
     >
       <div className="flex flex-col p-4 sm:justify-center max-w-screen-lg mx-auto text-primary font-semibold">
-        
+
         {/* Title */}
         <div className="max-md:pt-[60px] md:pt-24">
           <p className="text-4xl font-bold inline border-b-4 border-accent text-primary">
@@ -32,7 +31,7 @@ const Contact = () => {
             />
 
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="Enter your email"
               className="my-4 p-3 bg-white border rounded-md focus:outline-none text-primary"
@@ -50,8 +49,9 @@ const Contact = () => {
             </button>
           </form>
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

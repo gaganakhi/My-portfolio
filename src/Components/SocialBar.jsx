@@ -1,6 +1,6 @@
 // src/Components/SocialBar.jsx
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaUser } from "react-icons/fa";
 
 export default function SocialBar() {
   const [open, setOpen] = useState(false);
@@ -8,162 +8,102 @@ export default function SocialBar() {
   const linkedinUrl = "https://www.linkedin.com/in/gagan-n-514608271";
   const githubUrl = "https://github.com/gaganakhi";
   const mailto = "mailto:gaganakhil3@gmail.com";
-  const resumeUrl = "/Gagan_QA_Engineer.pdf"; // put file in public/
+  const resumeUrl = "/Gagan_QA_Engineer.pdf";
 
-  // close on ESC
+  // Close on ESC
   useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === "Escape") setOpen(false);
-    };
+    const onKey = (e) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
   return (
     <>
-      {/* Overlay (click to close) */}
+      {/* Overlay */}
       {open && (
         <div
           onClick={() => setOpen(false)}
           className="fixed inset-0 bg-black/40 z-40"
-          aria-hidden="true"
         />
       )}
 
       {/* Sliding panel */}
       <aside
-        aria-hidden={!open}
-        className={
-          "fixed top-0 left-0 h-full z-50 transition-transform duration-300 " +
-          (open ? "translate-x-0" : "-translate-x-full")
-        }
+        className={`fixed top-0 left-0 h-full z-50 transition-transform duration-300 ${
+          open ? "translate-x-0" : "-translate-x-full"
+        }`}
         style={{ width: 320 }}
       >
         <div className="h-full bg-white shadow-lg flex flex-col">
-          <div className="px-6 py-6 border-b">
-            <div className="flex items-center justify-between">
-              <div>
-                <div className="text-xl font-semibold text-gray-900">Gagan N</div>
-                <div className="text-sm text-gray-600">QA Test Engineer</div>
-              </div>
-
-              <button
-                onClick={() => setOpen(false)}
-                aria-label="Close panel"
-                className="p-2 rounded hover:bg-gray-100"
-              >
-                ✕
-              </button>
+          <div className="px-6 py-6 border-b flex justify-between">
+            <div>
+              <div className="text-xl font-semibold">Gagan N</div>
+              <div className="text-sm text-gray-600">QA Test Engineer</div>
             </div>
+            <button onClick={() => setOpen(false)}>✕</button>
           </div>
 
-          <div className="p-6 space-y-4 flex-1">
+          <div className="p-6 flex-1 space-y-4">
             <p className="text-sm text-gray-700">
-              Hi — I’m Gagan. I do Manual & Automation testing (Selenium + Java). Download my resume or contact me via the links below.
+              Manual & Automation Testing (Selenium + Java)
             </p>
 
-            <div className="flex gap-3">
-              <a
-                href={resumeUrl}
-                download
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-md shadow hover:bg-indigo-700"
-              >
-                Download Resume
-              </a>
-            </div>
-
-            <div className="pt-4 border-t">
-              <h4 className="text-sm font-semibold text-gray-800 mb-2">Quick links</h4>
-
-              <div className="flex flex-col gap-2">
-                <a
-                  href={linkedinUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-indigo-600 hover:underline"
-                >
-                  • LinkedIn
-                </a>
-                <a
-                  href={githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-800 hover:underline"
-                >
-                  • GitHub
-                </a>
-                <a href={mailto} className="text-gray-800 hover:underline">
-                  • Email me
-                </a>
-              </div>
-            </div>
+            <a
+              href={resumeUrl}
+              download
+              className="inline-block px-4 py-2 bg-indigo-600 text-white rounded-md"
+            >
+              Download Resume
+            </a>
           </div>
 
-          <div className="p-4 border-t text-xs text-gray-500">
+          <div className="p-4 text-xs text-gray-500 border-t">
             © {new Date().getFullYear()} Gagan N
           </div>
         </div>
       </aside>
 
-      {/* Left vertical icon bar (updated colors + icons) */}
-      <div className="fixed left-2 top-1/3 z-50 hidden md:flex flex-col gap-4">
-        {/* LinkedIn (brand blue) */}
+      {/* LEFT ORANGE SOCIAL BAR */}
+      <div className="fixed left-0 top-1/3 z-50 hidden md:flex flex-col bg-orange-500 rounded-r-xl overflow-hidden">
+        
+        {/* LinkedIn */}
         <a
           href={linkedinUrl}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#0A66C2] text-white shadow hover:scale-110 transform transition"
-          aria-label="LinkedIn"
+          className="group flex items-center gap-3 px-4 py-4 text-white hover:bg-orange-600 transition"
         >
-          <FaLinkedin size={20} />
+          <FaLinkedin size={22} />
+          <span className="w-20">LinkedIn</span>
         </a>
 
-        {/* GitHub (dark neutral) */}
+        {/* GitHub */}
         <a
           href={githubUrl}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#24292F] text-white shadow hover:scale-110 transform transition"
-          aria-label="GitHub"
+          className="group flex items-center gap-3 px-4 py-4 text-white hover:bg-orange-600 transition"
         >
-          <FaGithub size={20} />
+          <FaGithub size={22} />
+          <span className="w-20">GitHub</span>
         </a>
 
-        {/* Email (accent red) */}
+        {/* Email */}
         <a
           href={mailto}
-          className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#EA4335] text-white shadow hover:scale-110 transform transition"
-          aria-label="Email"
+          className="group flex items-center gap-3 px-4 py-4 text-white hover:bg-orange-600 transition"
         >
-          {/* Mail icon (inline SVG) */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6"
-            aria-hidden="true"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8.5v7a2 2 0 002 2h14a2 2 0 002-2v-7M3 8.5l9 6 9-6" />
-          </svg>
+          <FaEnvelope size={22} />
+          <span className="w-20">Email</span>
         </a>
 
-        {/* Profile button opens panel (neutral gray) */}
+        {/* Profile / Panel */}
         <button
-          onClick={() => setOpen((s) => !s)}
-          className="flex items-center justify-center w-12 h-12 rounded-lg bg-gray-600 text-white shadow hover:scale-110 transform transition"
-          aria-label="Open profile panel"
+          onClick={() => setOpen(true)}
+          className="group flex items-center gap-3 px-4 py-4 text-white hover:bg-orange-600 transition"
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M12 12a4 4 0 100-8 4 4 0 000 8zM3 20a9 9 0 0118 0" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
+          <FaUser size={22} />
+          <span className="w-20">Profile</span>
         </button>
       </div>
     </>
