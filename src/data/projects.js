@@ -8,7 +8,7 @@ export const projects = [
       desc: "A responsive flashcard application built with React and Tailwind CSS that helps users study efficiently through interactive card flipping and a clean, intuitive UI",
       tech: ["React", "Vite", "Tailwind"],
       img: project1Img,
-      url: "https://cardsnapflashcard.netlify.app/",
+      url: "https://cardsnap-flashcard.netlify.app/",
     },
     {
       title: "Invoice Generator",
