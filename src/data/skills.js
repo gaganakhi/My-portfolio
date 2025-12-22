@@ -1,47 +1,57 @@
+import html from "../assets/Skills/html.png";
+import css from "../assets/Skills/CSS.png";
+import javascript from "../assets/Skills/javascript.png";
+import selenium from "../assets/Skills/Selenium.png";
+import react from "../assets/Skills/react.png";
+import java from "../assets/Skills/java.png";
+import testng from "../assets/Skills/testng.png";
+import jenkins from "../assets/Skills/Jenkins.png";
+import postman from "../assets/Skills/Postman.png";
+
 export const skills = [
   {
     name: "HTML",
-    icon: "/src/assets/Skills/html.png",
+    icon: html,
     border: "from-orange-400 to-yellow-500",
   },
   {
     name: "CSS",
-    icon: "/src/assets/Skills/CSS.png",
+    icon: css,
     border: "from-blue-400 to-blue-600",
   },
   {
     name: "JavaScript",
-    icon: "/src/assets/Skills/javascript.png",
+    icon: javascript,
     border: "from-yellow-400 to-yellow-600",
   },
   {
     name: "Selenium",
-    icon: "/src/assets/Skills/Selenium.png",
+    icon: selenium,
     border: "from-green-400 to-green-600",
   },
   {
     name: "React",
-    icon: "/src/assets/Skills/react.png",
+    icon: react,
     border: "from-blue-300 to-blue-500",
   },
   {
     name: "Java",
-    icon: "/src/assets/Skills/java.png",
+    icon: java,
     border: "from-orange-400 to-red-500",
   },
   {
     name: "TestNG",
-    icon: "/src/assets/Skills/testng.png",
+    icon: testng,
     border: "from-yellow-400 to-orange-500",
   },
   {
     name: "Jenkins",
-    icon: "/src/assets/Skills/Jenkins.png",
+    icon: jenkins,
     border: "from-red-400 to-red-600",
   },
   {
-    name: "Postman",
-    icon: "/src/assets/Skills/Postman.png",
+    name: "postman",
+    icon: postman,
     border: "from-orange-400 to-red-500",
   },
 ];
