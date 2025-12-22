@@ -44,7 +44,7 @@ const Contact = () => {
               className="p-3 mb-8 bg-white border rounded-md focus:outline-none text-primary"
             ></textarea>
 
-            <button className="text-white bg-accent px-6 py-2 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-white bg-black px-6 py-2 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Submit
             </button>
           </form>
