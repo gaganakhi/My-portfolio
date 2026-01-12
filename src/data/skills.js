@@ -1,12 +1,13 @@
-import html from "../assets/Skills/html.png";
 import css from "../assets/Skills/CSS.png";
-import javascript from "../assets/Skills/javascript.png";
-import selenium from "../assets/Skills/Selenium.png";
-import react from "../assets/Skills/react.png";
+import html from "../assets/Skills/html.png";
 import java from "../assets/Skills/java.png";
-import testng from "../assets/Skills/testng.png";
+import javascript from "../assets/Skills/javascript.png";
 import jenkins from "../assets/Skills/Jenkins.png";
 import postman from "../assets/Skills/Postman.png";
+import react from "../assets/Skills/react.png";
+import selenium from "../assets/Skills/Selenium.png";
+import sql from "../assets/Skills/SQl.jpg";
+import testng from "../assets/Skills/testng.png";
 
 export const skills = [
   {
@@ -56,7 +57,7 @@ export const skills = [
   },
   {
     name: "SQL",
-    icon: "/src/assets/Skills/SQl.jpg",
+    icon: sql,
     border: "from-blue-400 to-blue-500",
   }
 ];
