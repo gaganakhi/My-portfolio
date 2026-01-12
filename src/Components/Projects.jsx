@@ -8,7 +8,7 @@ export default function Projects() {
 
         {/* Title */}
         <h2 className="text-4xl font-bold inline border-b-4 border-accent text-primary">
-          Protfolio
+          Portfolio
         </h2>
 
         {/* Grid */}
