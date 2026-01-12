@@ -44,4 +44,9 @@ export const skills = [
     icon: "/src/assets/Skills/Postman.png",
     border: "from-orange-400 to-red-500",
   },
+  {
+    name: "SQL",
+    icon: "/src/assets/Skills/SQl.jpg",
+    border: "from-blue-400 to-blue-500",
+  }
 ];
